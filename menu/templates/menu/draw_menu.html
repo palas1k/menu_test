@@ -1,0 +1,8 @@
+<a href="{% url 'menu_url' menu.pk %}">{{menu.name}}</a>
+
+{% for item in menu.sub.all %}
+<li class="{% if 'item.pk' in request.path %}active{% endif %}">
+<a href="{% url 'menu_url' item.pk %}">{{ item.name }}</a></li>
+<!--    <li><a href="{% url 'menu_url' item.pk %}">{{ item.name }}</a></li>-->
+{% endfor %}
+

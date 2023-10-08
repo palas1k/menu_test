@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+
+{% load draw_menu %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% draw_menu 'TestParent' %}
+    {% draw_menu 'TestParent2' %}
+{% block content %}{% endblock %}
+</body>
+</html>
