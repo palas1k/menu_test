@@ -22,5 +22,3 @@ pip install -r requirements.txt
 базу оставил свою
 
 root admin:admin
-
-не смог выполнить 8 пункт но оптимизировал orm запрос
